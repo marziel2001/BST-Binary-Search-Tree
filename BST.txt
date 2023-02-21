@@ -1,0 +1,43 @@
+drzewo BST
+Kluczami powinny być liczby całkowite bez znaku.
+Program umożliwia wykonanie następujących operacji:
++ - dodaj nowy element o podanym kluczu do drzewa,
+- - usuń element z podanym kluczem z drzewa (jeśli nie ma takiego elementu w drzewie, zignoruj),
+? - wyszukaj element o podanym kluczu w drzewie, wypisz '1' jeśli został znaleziony, lub '0' jeśli nie został znaleziony,
+m - wypisz klucz elementu najmniejszego (minimum) w drzewie,
+M - wypisz klucz elementu największego (maximum) w drzewie,
+q - wyjdź z programu.
+
+Input
+Dowolna liczba linii, w każdej jedna z komend:
++ <key>
+- <key>
+? <key>
+m
+M
+q
+Gdzie:
++, -, ?, m, M oraz q są identyfikatorami operacji,
+<key> jest kluczem elementu, którego operacja dotyczy,
+Należy założyć, że q będzie zawsze ostatnią operacją.
+
+Output
+Klucz danego elementu (dla operacji m oraz M), lub pojedyncza wartość 0/1 dla operacji ? (zależnie od tego, czy element został znaleziony).
+
+Example
+Input
++ 10
++ 20
++ 30
+m
+M
+? 20
+- 20
+? 20
+q
+
+Output
+10
+30
+1
+0
